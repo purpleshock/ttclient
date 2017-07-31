@@ -218,6 +218,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 344090822}
+  spHead: {fileID: 21300000, guid: cddd6af6088d944d7869720df98daa57, type: 3}
+  spBreast: {fileID: 21300000, guid: 8c7cc1274762d438e9efe182a6cf9f06, type: 3}
+  spBelly: {fileID: 21300000, guid: e8ee9b19f2ae84f198d43ad025808f83, type: 3}
+  spLowerBody: {fileID: 21300000, guid: 824b6a28309bf466bab6e596430ae579, type: 3}
 --- !u!1 &228282837
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,6 +425,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 344090822}
+  spHead: {fileID: 0}
+  spBreast: {fileID: 0}
+  spBelly: {fileID: 0}
+  spLowerBody: {fileID: 0}
 --- !u!1 &555835274
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +472,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 344090822}
+  spHead: {fileID: 21300000, guid: cddd6af6088d944d7869720df98daa57, type: 3}
+  spBreast: {fileID: 21300000, guid: 8c7cc1274762d438e9efe182a6cf9f06, type: 3}
+  spBelly: {fileID: 21300000, guid: e8ee9b19f2ae84f198d43ad025808f83, type: 3}
+  spLowerBody: {fileID: 21300000, guid: 824b6a28309bf466bab6e596430ae579, type: 3}
 --- !u!61 &555835277
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -574,6 +586,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 344090822}
+  spHead: {fileID: 21300000, guid: cddd6af6088d944d7869720df98daa57, type: 3}
+  spBreast: {fileID: 21300000, guid: 8c7cc1274762d438e9efe182a6cf9f06, type: 3}
+  spBelly: {fileID: 21300000, guid: e8ee9b19f2ae84f198d43ad025808f83, type: 3}
+  spLowerBody: {fileID: 21300000, guid: 824b6a28309bf466bab6e596430ae579, type: 3}
 --- !u!61 &731306637
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -671,6 +687,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 344090822}
+  spHead: {fileID: 21300000, guid: cddd6af6088d944d7869720df98daa57, type: 3}
+  spBreast: {fileID: 21300000, guid: 8c7cc1274762d438e9efe182a6cf9f06, type: 3}
+  spBelly: {fileID: 21300000, guid: e8ee9b19f2ae84f198d43ad025808f83, type: 3}
+  spLowerBody: {fileID: 21300000, guid: 824b6a28309bf466bab6e596430ae579, type: 3}
 --- !u!61 &1147317638
 BoxCollider2D:
   m_ObjectHideFlags: 0
