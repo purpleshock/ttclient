@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 83746132}
   - component: {fileID: 83746134}
   - component: {fileID: 83746135}
+  - component: {fileID: 83746136}
   m_Layer: 0
   m_Name: Head
   m_TagString: Head
@@ -222,6 +223,23 @@ MonoBehaviour:
   spChest: {fileID: 21300000, guid: 8c7cc1274762d438e9efe182a6cf9f06, type: 3}
   spBelly: {fileID: 21300000, guid: e8ee9b19f2ae84f198d43ad025808f83, type: 3}
   spLowerBody: {fileID: 21300000, guid: 824b6a28309bf466bab6e596430ae579, type: 3}
+--- !u!95 &83746136
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 83746131}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 13096367eb03c427db9d750f4e010b11, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &228282837
 GameObject:
   m_ObjectHideFlags: 0
