@@ -11,6 +11,7 @@ public class HitController : MonoBehaviour
 	public Sprite spBelly;
 	public Sprite spLowerBody;
 
+
 	private string currentSpriteName;
 
 	void Start ()
@@ -20,6 +21,8 @@ public class HitController : MonoBehaviour
 
 	void Update ()
 	{
+		
+		/*
 		if (Input.touchCount > 0) {
 			Touch myTouch = Input.GetTouch (0);
 			if (myTouch.phase == TouchPhase.Ended) {
@@ -27,13 +30,44 @@ public class HitController : MonoBehaviour
 				ChangeSprite ();
 			}
 		}
+
+		
+		*/
+		/*
+		if (GetComponent<Animator> ().GetBool ("head")) {
+			GetComponent<Animator> ().SetBool ("head", false);
+		}
+		*/
+
+		if (Input.GetMouseButtonDown (0)) {
+			Debug.Log ("CLICKED");
+			Vector2 origin = new Vector2 (Camera.main.ScreenToWorldPoint (Input.mousePosition).x,
+				                 Camera.main.ScreenToWorldPoint (Input.mousePosition).y);
+			RaycastHit2D hit = Physics2D.Raycast (origin, Vector2.zero, 0f);
+			if (hit) {
+				
+				if (hit.collider.name == "Head") {
+					//Debug.Log ("HERE");
+					//hit.transform.parent.GetComponent<Animator> ().SetBool ("head", true);
+					Debug.Log(GetComponent<Animator>()==null);
+					GetComponent<Animator> ().SetTrigger ("headTrigger");
+				}
+			}
+
+				
+		} else {
+			//
+		}
+
+
+
+	}
+	void OnDrawGizmos(){
+		Gizmos.color = Color.red;
+		Gizmos.DrawLine (transform.position, transform.position + Vector3.forward);
 	}
 
-	void OnMouseDown ()
-	{
-		text.text = "Click " + gameObject.tag;
-		ChangeSprite ();
-	}
+
 
 	void ChangeSprite ()
 	{
