@@ -40,19 +40,20 @@ public class HitController : MonoBehaviour
 		*/
 
 		if (Input.GetMouseButtonDown (0)) {
-			Debug.Log ("CLICKED");
 			Vector2 origin = new Vector2 (Camera.main.ScreenToWorldPoint (Input.mousePosition).x,
 				                 Camera.main.ScreenToWorldPoint (Input.mousePosition).y);
 			RaycastHit2D hit = Physics2D.Raycast (origin, Vector2.zero, 0f);
 			if (hit) {
-				
+				Debug.Log ("CLICKED " + hit.collider.name);
+
 				if (hit.collider.name == "Head" ||
 				    hit.collider.name == "Chest") {
-					//Debug.Log ("HERE");
 					//hit.transform.parent.GetComponent<Animator> ().SetBool ("head", true);
 					//Debug.Log (GetComponent<Animator> () == null);
 					GetComponent<Animator> ().SetTrigger (hit.collider.name + "Trigger");
 				}
+			} else {
+				Debug.Log ("CLICKED nothing");
 			}
 		} else {
 			//
