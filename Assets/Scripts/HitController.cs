@@ -46,28 +46,25 @@ public class HitController : MonoBehaviour
 			RaycastHit2D hit = Physics2D.Raycast (origin, Vector2.zero, 0f);
 			if (hit) {
 				
-				if (hit.collider.name == "Head") {
+				if (hit.collider.name == "Head" ||
+				    hit.collider.name == "Chest") {
 					//Debug.Log ("HERE");
 					//hit.transform.parent.GetComponent<Animator> ().SetBool ("head", true);
-					Debug.Log(GetComponent<Animator>()==null);
-					GetComponent<Animator> ().SetTrigger ("headTrigger");
+					//Debug.Log (GetComponent<Animator> () == null);
+					GetComponent<Animator> ().SetTrigger (hit.collider.name + "Trigger");
 				}
 			}
-
-				
 		} else {
 			//
 		}
 
-
-
 	}
-	void OnDrawGizmos(){
+
+	void OnDrawGizmos ()
+	{
 		Gizmos.color = Color.red;
 		Gizmos.DrawLine (transform.position, transform.position + Vector3.forward);
 	}
-
-
 
 	void ChangeSprite ()
 	{
