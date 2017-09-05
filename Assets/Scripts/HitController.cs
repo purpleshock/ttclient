@@ -17,6 +17,7 @@ public class HitController : MonoBehaviour
 	void Start ()
 	{
 		currentSpriteName = gameObject.tag;
+		Debug.Log(GameControl.Control.myNum);
 	}
 
 	void Update ()
